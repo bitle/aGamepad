@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/RelativeLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<!--	<RelativeLayout android:id="@+id/RelativeLayout02"-->
+<!--		android:layout_above="@+id/ipInput"-->
+<!--		android:layout_alignParentTop="true"-->
+<!--		android:layout_width="fill_parent"-->
+<!--		android:layout_height="wrap_content" >-->
+<!--		-->
+<!--		<com.bitle.views.MyButton android:text="GearDown"-->
+<!--			android:id="@+id/Button01"-->
+<!--			android:layout_width="wrap_content"-->
+<!--			android:layout_height="fill_parent"-->
+<!--			android:layout_alignParentLeft="true"-->
+<!--			/>-->
+<!--			-->
+<!--		<com.bitle.views.MyButton android:layout_height="fill_parent"-->
+<!--			android:layout_width="wrap_content"-->
+<!--			android:layout_toRightOf="@+id/Button01"-->
+<!--			android:text="GearUp"-->
+<!--			android:id="@+id/Button02"-->
+<!--			android:layout_alignParentRight="true" -->
+<!--			/>-->
+<!--	</RelativeLayout>-->
+	<AbsoluteLayout android:id="@+id/AbsoluteLayout01"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_above="@+id/ipInput"
+		android:layout_alignParentTop="true">
+		<com.bitle.views.MyButton android:id="@+id/btnUp"
+				android:layout_x="70px"
+				android:layout_y="10px"
+				android:layout_width="70px"
+				android:layout_height="70px"
+				android:background="@drawable/up"/>
+		<com.bitle.views.MyButton android:id="@+id/btnRight"
+				android:layout_x="140px"
+				android:layout_y="80px"
+				android:layout_width="70px"
+				android:layout_height="70px"
+				android:background="@drawable/right"/>
+		<com.bitle.views.MyButton android:id="@+id/btnDown"
+				android:layout_x="70px"
+				android:layout_y="150px"
+				android:layout_width="70px"
+				android:layout_height="70px"
+				android:background="@drawable/down"/>
+		<com.bitle.views.MyButton android:id="@+id/btnLeft"
+				android:layout_x="0px"
+				android:layout_y="80px"
+				android:layout_width="70px"
+				android:layout_height="70px"
+				android:background="@drawable/left"/>
+			
+	</AbsoluteLayout>	
+	<LinearLayout android:id="@+id/ipInput"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		 >
+		<EditText android:id="@+id/editIp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="5"
+			android:text="192.168.1.5"
+		 />
+		 <Button android:id="@+id/btnIp"
+		 	android:layout_width="wrap_content"
+		 	android:layout_height="wrap_content"
+		 	android:layout_weight="1"
+		 	android:text="Ok" />
+	</LinearLayout>
+
+
+
+</RelativeLayout>

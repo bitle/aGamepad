@@ -1,0 +1,9 @@
+; PPJoyCpl.def : Declares the module parameters for the DLL.
+
+LIBRARY
+DESCRIPTION  'PPJoyDLL callback library for RC input'
+
+EXPORTS
+		InitDLL
+		Cleanup
+
